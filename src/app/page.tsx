@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Sparkles, MessageCircle, CheckCircle2 } from "lucide-react";
 
 export default function Home() {
@@ -87,8 +88,8 @@ export default function Home() {
             {/* Restauracao de Foto Antiga */}
             <article className="flex flex-col gap-3">
               <div className="group relative rounded-2xl overflow-hidden bg-black border border-white/10 shadow-xl" tabIndex={0} aria-label="Comparação de foto rasgada antes e depois da restauração">
-                <img src="/images/Rasgado.jpg" alt="Foto antiga rasgada antes da restauração" loading="lazy" className="w-full h-auto block" />
-                <img src="/images/Restaurado.png" alt="Foto antiga perfeitamente restaurada" loading="lazy" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
+                <Image src="/images/Rasgado.jpg" alt="Foto antiga rasgada antes da restauração" width={1142} height={1600} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
+                <Image src="/images/Restaurado.png" alt="Foto antiga perfeitamente restaurada" width={1060} height={1484} sizes="(max-width: 768px) 100vw, 33vw" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
                 
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs sm:text-sm font-medium px-4 py-2 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-white">
                   <span>Antes</span>
@@ -102,8 +103,8 @@ export default function Home() {
             {/* Melhoria de Qualidade/Nitidez */}
             <article className="flex flex-col gap-3">
               <div className="group relative rounded-2xl overflow-hidden bg-black border border-white/10 shadow-xl" tabIndex={0} aria-label="Comparação de foto embaçada antes e depois de melhorar a nitidez">
-                <img src="/images/Sem nitidez.png" alt="Foto embaçada e sem qualidade" loading="lazy" className="w-full h-auto block" />
-                <img src="/images/Alta nitidez.png" alt="Foto com alta qualidade e nitidez perfeita" loading="lazy" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
+                <Image src="/images/Sem nitidez.png" alt="Foto embaçada e sem qualidade" width={2080} height={2600} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
+                <Image src="/images/Alta nitidez.png" alt="Foto com alta qualidade e nitidez perfeita" width={2080} height={2600} sizes="(max-width: 768px) 100vw, 33vw" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
                 
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs sm:text-sm font-medium px-4 py-2 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-white">
                   <span>Antes</span>
@@ -117,8 +118,8 @@ export default function Home() {
             {/* Edicao Profissional */}
             <article className="flex flex-col gap-3">
               <div className="group relative rounded-2xl overflow-hidden bg-black border border-white/10 shadow-xl" tabIndex={0} aria-label="Comparação de foto crua antes e depois da edição profissional">
-                <img src="/images/Antes.png" alt="Foto original sem tratamento" loading="lazy" className="w-full h-auto block" />
-                <img src="/images/Depois.png" alt="Foto com tratamento profissional de cores e luzes" loading="lazy" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
+                <Image src="/images/Antes.png" alt="Foto original sem tratamento" width={3264} height={4096} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
+                <Image src="/images/Depois.png" alt="Foto com tratamento profissional de cores e luzes" width={3264} height={4096} sizes="(max-width: 768px) 100vw, 33vw" className="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100" />
                 
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs sm:text-sm font-medium px-4 py-2 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-white">
                   <span>Antes</span>
@@ -154,10 +155,10 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <h3 className="font-semibold text-xl text-white mb-2">Campanhas e Promoções</h3>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg group bg-black">
-                <img src="/images/Promoção Moída.png" alt="Exemplo de arte para promoção de vendas" loading="lazy" className="w-full h-auto block" />
+                <Image src="/images/Promoção Moída.png" alt="Exemplo de arte para promoção de vendas" width={3240} height={5760} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
               </div>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg group bg-black">
-                <img src="/images/Marketing1.jpeg" alt="Exemplo de arte para marketing digital" loading="lazy" className="w-full h-auto block" />
+                <Image src="/images/Marketing1.jpeg" alt="Exemplo de arte para marketing digital" width={1600} height={1600} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
               </div>
             </div>
 
@@ -165,10 +166,10 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <h3 className="font-semibold text-xl text-white mb-2">Posts para Redes Sociais</h3>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg group bg-black">
-                <img src="/images/Post2.png" alt="Exemplo de post de destaque no feed" loading="lazy" className="w-full h-auto block" />
+                <Image src="/images/Post2.png" alt="Exemplo de post de destaque no feed" width={3375} height={4219} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
               </div>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg group bg-black">
-                <img src="/images/Máster-Post-Render.jpg" alt="Exemplo de postagem visualmente rica" loading="lazy" className="w-full h-auto block" />
+                <Image src="/images/Máster-Post-Render.jpg" alt="Exemplo de postagem visualmente rica" width={2720} height={4096} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
               </div>
             </div>
 
@@ -176,7 +177,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
               <h3 className="font-semibold text-xl text-white mb-2">Stories e Dia a Dia</h3>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-lg group bg-black">
-                <img src="/images/Storys.png" alt="Exemplo de arte vertical para Stories" loading="lazy" className="w-full h-auto block" />
+                <Image src="/images/Storys.png" alt="Exemplo de arte vertical para Stories" width={3375} height={6000} sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-auto block" />
               </div>
             </div>
 
